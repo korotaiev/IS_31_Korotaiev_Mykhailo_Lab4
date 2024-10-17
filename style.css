@@ -234,16 +234,20 @@ footer p a {
   }
   .menu-btn {
     display: block;
+    color: #000000;
+    background-color: #ffffff;
   }
   .products {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px;
   }
 
   .products .card {
     width: 90%;
     max-width: 320px;
+    margin-left: -50px;
   }
   .pheading {
     font-size: 28px;
