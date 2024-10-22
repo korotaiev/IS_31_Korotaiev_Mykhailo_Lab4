@@ -10,17 +10,17 @@
     <header>
       <nav class="navbar">
         <div class="logo">Fearless</div>
-        <div class="menu-wrapper">
-          <button class="menu-btn" onclick="toggleMenu()">☰</button>
         <ul class="menu">
           <li><a href="" class="active">Home</a></li>
           <li><a href="">News</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Products</a></li>
           <li><a href="">Contact</a></li>
+          <li><a href="">Sign Up</a></li>
         </ul>
-      </div>
-      <button class="signup-btn">Sign Up</button> 
+        <div class="burger">
+          <span></span>
+        </div>
       </nav>
     </header>
     <main>
@@ -117,12 +117,14 @@
     <footer>
       <p>Copyrights at <a href="">Fearless</a></p>
     </footer>
+
     <script>
-      function toggleMenu() {
-        const menu = document.querySelector('.menu');
-        menu.classList.toggle('active');
-      }
-    </script>
+      document.querySelector('.burger').addEventListener('click', function() {
+          this.classList.toggle('active');
+          document.querySelector('.menu').classList.toggle('open');
+      });
+      </script>
+      
     
   </body>
 </html>
